@@ -1,13 +1,9 @@
-import express from 'express';
-import cors from 'cors';
+const http = require("http");
 
-const app = express();
-app.use(cors());
-app.use(express.json());
 
-app.get('/api', (req, res) => {
-  res.json({ message: 'Hello from Express!' });
-});
+export const server = http.createServer((req,res)=> {
+    res.end("SUCA");
 
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+})
+
+server.listen(5000);
