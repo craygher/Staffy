@@ -1,0 +1,63 @@
+.loading-screen {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+
+.loading-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.loading-bar-pill {
+  width: 180px;
+  height: 48px;
+  background: #e0e7ff;
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.08);
+}
+
+.loading-bar-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  border-radius: 24px;
+  background: linear-gradient(90deg, #5ec6ff, #3ad6c2 80%, #1a23b7 100%);
+  animation: pillMove 1.5s linear infinite;
+}
+
+@keyframes pillMove {
+  0% { left: 0; }
+  50% { left: 120px; }
+  100% { left: 0; }
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon {
+  font-size: 64px;
+  color: #7c3aed;
+  margin-bottom: 16px;
+}
+
+.logo-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #7c3aed;
+}
