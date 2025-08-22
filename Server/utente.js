@@ -1,7 +1,7 @@
 const utenti=[
     {
         nome: "Davide",
-        Cognome:"Borrello"
+        cognome:"Borrello"
     },
     {
         nome: "Ciccio",
